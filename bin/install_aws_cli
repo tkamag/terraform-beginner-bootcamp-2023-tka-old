@@ -10,10 +10,10 @@ sudo ./aws/install --update
 
 ACCOUNT=$(aws sts get-caller-identity --query "Account" --output text)
 USER_ID=$(aws sts get-caller-identity --query "UserId"  --output text) 
-USER_ARN=$(aws sts get-caller-identity --query "Arn"  --output text)
+USER_ARN=$(aws sts get-caller-identity --query "Arn"  --output text) 
 
-echo -e "Your UserId is:" $ACCOUNT "\n"
-echo -e "Your Account is:" $USER_ID "\n"
+echo -e "Your UserId is:" $ACCOUNT 
+echo -e "Your Account is:" $USER_ID 
 echo -e "Your Arn is:" $USER_ARN 
 #clear
 cd $PROJECT_ROOT
