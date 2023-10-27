@@ -15,5 +15,5 @@ USER_ARN=$(aws sts get-caller-identity --query "Arn"  --output text)
 echo -e "Votre UserId est le:" $ACCOUNT "\n"
 echo -e "Votre compte est le:" $USER_ID "\n"
 echo -e "Arn associé à cotre compte est le:" $USER_ARN 
-clear
+#clear
 cd $PROJECT_ROOT
